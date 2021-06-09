@@ -158,9 +158,10 @@ project ZipAda is
 
    Linker_GC_Options := ();
 
+   -- JANO: somehow this is failing anyway
    case Zip_OS is
       when "MacOSX" => null;
-      when others => Linker_GC_Options := ("-Wl,--gc-sections");
+      when others => Linker_GC_Options := (); -- ("-Wl,--gc-sections");
    end case;
 
    package Linker is
