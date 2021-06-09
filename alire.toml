@@ -28,3 +28,9 @@ executables = [
 "zipada",
 "zip_dir_list",
 ]
+
+[gpr-externals]
+Zip_OS_Kind = ["Win32", "Win64", "Linux", "MacOSX", "Any"]
+
+[gpr-set-externals."case(os)".macos]
+Zip_OS_Kind = "MacOSX"
