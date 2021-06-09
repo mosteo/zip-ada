@@ -1,5 +1,5 @@
 name = "zipada"
-version = "56.0.1"
+version = "56.0.2"
 authors = [ "Gautier de Montmollin", ]
 description = "Manage Zip Archives and raw LZMA streams"
 licenses = "MIT"
